@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1.2P 2</title>
+</head>
+<body>
+  <h1>JavaScript Concepts</h1>
+  <p>These are JavaScript concepts implemented I have implemented.</p>
+
+  <button onclick="myFunction1()">Try it</button>
+
+  <p id="uppercase">Hello World!</p>
+
+  <script>
+    document.getElementById("uppercase").innerHTML = text;
+
+    function myFunction1() {
+      let text = document.getElementById("uppercase").innerHTML;
+
+      document.getElementById("uppercase").innerHTML = text.toLocaleUpperCase();
+    }
+  </script>
+
+  <p>The length of the string is:</p>
+  <p id="length"></p>
+
+  <script>
+    let text =        "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    document.getElementById("length").innerHTML = text.length;
+  </script>
+
+  <button onclick="myFunction2()">Try it</button>
+
+  <p id="replace">Motheo Boikhutso is at Deakin</p>
+
+  <script>
+    function myFunction2() {
+      let text = document.getElementById("replace").innerHTML;
+
+      document.getElementById("replace").innerHTML = text.replace("Deakin", "Home");
+    }
+  </script>
+
+  <button onclick="myFunction3()">Try it</button>
+
+  <p id="lowercase">Hello World!</p>
+
+  <script>
+    function myFunction3() {
+      let text = document.getElementById("lowercase").innerHTML;
+
+      document.getElementById("lowercase").innerHTML = text.toLowerCase();
+    }
+  </script>
+
+  <p id="concat"></p>
+
+  <script>
+    let text1 = "Motheo";
+    let text2 = "Boikhutso";
+    let text3 = text1.concat(" ",text2);
+    document.getElementById("concat").innerHTML = text3;
+  </script>
+
+  <p id="addnumbers"></p>
+
+  <script>
+    let x = 10;
+    let y = 20;
+    let z = x + y;
+    document.getElementById("addnumbers").innerHTML = z;
+  </script>
+
+  <p id="nan"></p>
+
+  <script>
+    document.getElementById("nan").innerHTML = 100 / "Apple"
+  </script>
+
+  <p id="infinity"></p>
+
+  <script>
+  let myNumber = 2; 
+    let txt = "";
+    while (myNumber != Infinity) {
+       myNumber = myNumber * myNumber;
+       txt = txt + myNumber + "<br>";
+    }
+    document.getElementById("infinity").innerHTML = txt;
+  </script>
+
+  <p id="hexadecimal"></p>
+
+  <script>
+    let hex = 0xFF;
+    document.getElementById("hexadecimal").innerHTML = "0xFF = " + hex;
+  </script>
+
+  <p id="object"></p>
+
+  <script>
+    // x is a number
+    let a = 123;
+    
+    // y is a Number object
+    let b = new Number(123);
+    
+    document.getElementById("object").innerHTML = typeof a + "<br>" + typeof b;
+  </script>
+
+  <p id="arraylength"></p>
+
+  <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let size = fruits.length;
+    document.getElementById("arraylength").innerHTML = size;
+  </script>
+
+  <p id="arraytostring"></p>
+  
+  <script>
+    const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("arraytostring").innerHTML = fruits2.toString();
+  </script>
+  
+  <p id="pop1"></p>
+  <p id="pop2"></p>
+
+  <script>
+    const veggies = ["Potato", "Tomato", "Broccoli", "Lettuce"];
+    document.getElementById("pop1").innerHTML = veggies;
+    veggies.pop();
+    document.getElementById("pop2").innerHTML = veggies;
+  </script>
+
+  <p id="push1"></p>
+  <p id="push2"></p>
+  
+  <script>
+    const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("push1").innerHTML = fruits3;
+    fruits3.push("Kiwi");
+    document.getElementById("push2").innerHTML = fruits3;
+  </script>
+
+  <p id="shift1"></p>
+  <p id="shift2"></p>
+
+  <script>
+    const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("shift1").innerHTML = fruits4;
+    fruits4.shift();
+    document.getElementById("shift2").innerHTML = fruits4;
+  </script>
+
+  <p id="newdate"></p>
+
+  <script>
+    const d = new Date();
+    document.getElementById("newdate").innerHTML = d;
+  </script>
+
+  <p id="datestring"></p>
+
+  <script>
+    const d1 = new Date("October 13, 2014 11:13:00");
+    document.getElementById("datestring").innerHTML = d1;
+  </script>
+
+  <p>100000000000 milliseconds from January 01 1970 UTC is:</p>
+  <p id="milliseconds"></p>
+
+  <script>
+    const d2 = new Date(100000000000);
+    document.getElementById("milliseconds").innerHTML = d2;
+  </script>
+
+  <p id="century"></p>
+
+  <script>
+    const d3 = new Date(99, 11, 24);
+    document.getElementById("century").innerHTML = d3;
+  </script>
+
+  <p id="dateyandm"></p>
+  <script>
+    const d4 = new Date(2018, 11);
+    document.getElementById("dateyandm").innerHTML = d4;
+  </script>
+
+  <p id="function1"></p>
+
+  <script>
+    function myFunction4(p1, p2) {
+    return p1 * p2;
+    }
+    
+    let result = myFunction4(4, 3);
+    document.getElementById("function1").innerHTML = result;
+  </script>
+
+  <p id="invoke"></p>
+
+  <script>
+    function toCelsius(f) {
+    return (5/9) * (f-32);
+    }
+
+    let value = toCelsius(77);
+    document.getElementById("invoke").innerHTML = value;
+  </script>
+
+  <footer>
+    <p>&copy; Motheo Boikhutso</p>
+    <p>Student ID: 218400235</p>
+    <a href="https://github.com/motheob">My GitHub</a>
+  </footer>
+</body>
+</html>
